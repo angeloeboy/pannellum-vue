@@ -6084,6 +6084,11 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
+pannellum@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/pannellum/-/pannellum-2.5.6.tgz#13bfec43ec272a70b729f20f70f9c34d05b25264"
+  integrity sha512-R4kSPpj36wQPlyIi9ZftxPfVYF11DEbNBATUEI+pkMGZDFYBV5Jxi6tYFVDdmxA2xaTeKZQHMIuIIj7njVSTQQ==
+
 parallel-transform@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parallel-transform/-/parallel-transform-1.2.0.tgz#9049ca37d6cb2182c3b1d2c720be94d14a5814fc"
@@ -8354,6 +8359,14 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-pannellum@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/vue-pannellum/-/vue-pannellum-0.5.3.tgz#d11bfed8d3906d9db32a937bafc9fd027788ce98"
+  integrity sha512-9urqg9aJEf+MPnpedczQVhXUeYvNrzGoyBmuz6IpPoeoVKyR3Ak+y/0+iZ6kkMAiIAu3ib8tkR/Oikb0wzmvtA==
+  dependencies:
+    lodash.debounce "^4.0.8"
+    pannellum "^2.5.6"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"

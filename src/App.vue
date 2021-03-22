@@ -1,26 +1,52 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div v-if="loggedIn">
+    <Lobby />
+  </div>
+  <div v-else>
+    <Login @login="login"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Lobby from "./components/Lobby.vue"
+import Login from "./components/Login.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Lobby,
+    Login
+  },
+
+  data() {
+    return{
+      loggedIn: false,
+      userName: "",
+      password: ""
+    }
+  },
+
+  methods: {
+    login(){
+      this.loggedIn = true
+    }
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0px;
+  }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
+
+
+
 </style>
